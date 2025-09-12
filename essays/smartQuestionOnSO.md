@@ -10,7 +10,7 @@ published: true
 Good questions buy you time. They compress context for volunteers, make the problem falsifiable, and often lead you to the answer while writing them. Eric S. Raymond’s *How To Ask Questions The Smart Way* argues for being precise about environment, showing what you tried, and supplying a minimal, reproducible example (MRE). Those habits aren’t just polite; they’re scalable engineering moves that reduce turnaround time for everyone. See: <http://www.catb.org/esr/faqs/smart-questions.html> and Stack Overflow’s MRE guidance: <https://stackoverflow.com/help/minimal-reproducible-example>.
 
 ## A smart question in the wild (Stack Overflow)
-**Question (summary).** A C++ user wants a **simple CLI flag**—```--flag``` alone should set a ```bool``` to true—**without** writing ```--flag=true```. Their current Boost.Program_options snippet uses ```value<bool>(&flag_value)``` and therefore *requires* an explicit value. They ask how to keep the option “value-less” yet land in a ```bool``` automatically.  
+**Question (summary).** A C++ user wants a **simple CLI flag**, ```--flag``` alone should set a ```bool``` to true, **without** writing ```--flag=true```. Their current Boost.Program_options snippet uses ```value<bool>(&flag_value)``` and therefore *requires* an explicit value. They ask how to keep the option “value-less” yet land in a ```bool``` automatically.  
 **Link:** <https://stackoverflow.com/questions/17853952/how-to-automatically-store-the-value-of-a-simple-flag-into-a-variable>
 
 **Why it’s smart.**
@@ -18,7 +18,7 @@ Good questions buy you time. They compress context for volunteers, make the prob
 - **Tiny repro:** shows the current ```value<bool>(&flag_value)``` usage and the undesired behavior.
 - **Narrow scope:** concrete API usage, not open-ended design therapy.
 
-**Outcome.** The top answer recommends ```boost::program_options::bool_switch()```—a semantic that **refuses explicit values** and evaluates to **true if present, false if absent**. In practice:
+**Outcome.** The top answer recommends ```boost::program_options::bool_switch()```, a semantic that **refuses explicit values** and evaluates to **true if present, false if absent**. In practice:
 
 ```cpp
 #include <boost/program_options.hpp>
