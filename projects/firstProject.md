@@ -8,7 +8,7 @@ published: true
 labels:
   - Lisp
   - GitHub
-summary: "My very first essay."
+summary: "My very first project?"
 ---
 
 ## Introduction
