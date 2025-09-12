@@ -86,9 +86,28 @@ That `%` wraparound creates fun edge teleports on some layouts—one more little
 
 ## Pixel art & animation: small loops, big feel
 
-I drew six XPMs (player/enemy/wall/floor/item/exit). Each sprite sheet is 32×32 tiles; the player and enemy have **4 frames**. I blit a 32-pixel-wide window along the sheet as the frame counter advances. Transparency is handled by skipping a sentinel color (e.g., `0xFF000000`) when writing to the frame buffer, so the character blends neatly over the floor.
+I drew six XPMs (player/enemy/wall/floor/item/exit). Each sprite sheet is 32×32 tiles; the player and enemy have 4 frames. I blit a 32-pixel window across the sheet as the frame counter advances, and skip a sentinel color (e.g., 0xFF000000) when writing to the frame buffer so sprites blend over the floor.
 
 Short version: tiny frames + consistent timing = surprisingly lively motion, even with four frames.
+
+### A peek at the assets
+<div style="max-width:80vw; margin:0 auto;">
+  <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; align-items:flex-start;">
+    <figure style="flex:1 1 260px; margin:0;">
+      <img src="{{ '/img/r2d2.png' | relative_url }}" alt="R2-D2 exit sprite sheet (XPM)" style="width:100%; height:auto; display:block; border-radius:8px;">
+      <figcaption style="margin-top:6px; text-align:center;">Exit (R2-D2) XPM</figcaption>
+    </figure>
+    <figure style="flex:1 1 260px; margin:0;">
+      <img src="{{ '/img/tieFighter.png' | relative_url }}" alt="Stormtrooper/Enemy concept pixels" style="width:100%; height:auto; display:block; border-radius:8px;">
+      <figcaption style="margin-top:6px; text-align:center;">Stormtrooper / chaser</figcaption>
+    </figure>
+    <figure style="flex:1 1 260px; margin:0;">
+      <img src="{{ '/img/bb8.png' | relative_url }}" alt="Player cat / BB-8 study pixels" style="width:100%; height:auto; display:block; border-radius:8px;">
+      <figcaption style="margin-top:6px; text-align:center;">Player studies & tiles</figcaption>
+    </figure>
+  </div>
+</div>
+
 
 ## My build setup
 
