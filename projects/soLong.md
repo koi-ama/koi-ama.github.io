@@ -33,13 +33,16 @@ I built a tiny 2D maze game in C using MiniLibX. You “clear” every **C** (St
 
 ## Two short clips (why I tweaked the map)
 
-**First try (too difficult):**
-
-![Too difficult map demo](../img/tooDifficult.gif)
-
-**Second try (friendlier layout, finally clear):**
-
-![Friendlier map demo](../img/easy.gif)
+<div style="display:flex; gap:16px; justify-content:center; align-items:flex-start; max-width:80vw; margin:0 auto; flex-wrap:wrap;">
+  <figure style="flex:1 1 360px; margin:0;">
+    <figcaption style="margin:0 0 8px 0; font-weight:600;">First try (too difficult)</figcaption>
+    <img src="{{ '/img/tooDifficult.gif' | relative_url }}" alt="Too difficult map demo" style="width:100%; height:auto; display:block; border-radius:8px;">
+  </figure>
+  <figure style="flex:1 1 360px; margin:0;">
+    <figcaption style="margin:0 0 8px 0; font-weight:600;">Second try (friendlier layout, finally clear)</figcaption>
+    <img src="{{ '/img/easy.gif' | relative_url }}" alt="Friendlier map demo" style="width:100%; height:auto; display:block; border-radius:8px;">
+  </figure>
+</div>
 
 
 I initially built a map that looked clever in my head and felt miserable under my fingers. After a few “boom” moments, I simplified the corridors and spacing. Practicing on a friendlier layout helped me learn the feel of movement and timing—then I could come back to harder maps with less panic.
