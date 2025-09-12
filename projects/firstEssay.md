@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/pic4firstEssay.png
 title: "helloWorld"
 date: 2025
 published: true
