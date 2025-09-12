@@ -29,54 +29,63 @@ That was an **8.05 s** drop (about **21.8%** faster). Then I drifted away from s
 
 ### Clips (embedded)
 
-<div class="video-row">
-  <figure class="video-card">
-    <figcaption class="video-title">
-      July 2022 — 36.96
-      <small> · <a href="https://youtu.be/djeWwlQcAvM" target="_blank" rel="noopener">YouTube ↗</a></small>
-    </figcaption>
-    <div class="video-embed">
-      <iframe
-        src="https://www.youtube.com/embed/djeWwlQcAvM?rel=0"
-        title="50 free 36.96 (2022-07-11)"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-  </figure>
-
-  <figure class="video-card">
-    <figcaption class="video-title">
-      Mar 2023 — 28.91
-      <small> · <a href="https://youtu.be/q6Pg6k7ORuM" target="_blank" rel="noopener">YouTube ↗</a></small>
-    </figcaption>
-    <div class="video-embed">
-      <iframe
-        src="https://www.youtube.com/embed/q6Pg6k7ORuM?rel=0"
-        title="50 free 28.91 (2023-03-06)"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-  </figure>
-</div>
-
 <style>
-/* responsive two-up video layout */
-.video-row{
-  display:flex; gap:16px; justify-content:center; align-items:flex-start;
-  max-width:min(1100px,92vw); margin:12px auto;
+/* responsive 2-up → 1-up(80% width) gallery */
+.yt-gallery{
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start;
+  gap:clamp(12px,2vw,24px); max-width:1200px; margin:0 auto;
 }
-.video-card{ flex:1 1 520px; margin:0; }
-.video-title{ font-weight:600; margin:0 0 8px; }
-.video-embed{ position:relative; width:100%; }
-.video-embed::before{ content:""; display:block; padding-top:56.25%; } /* 16:9 */
-.video-embed > iframe{
-  position:absolute; inset:0; width:100%; height:100%; border:0; border-radius:12px;
+.yt-card{ flex:1 1 520px; min-width:320px; max-width:640px; }
+.yt-title{ font-weight:600; margin:0 0 8px 0; }
+.yt-embed{
+  position:relative; width:100%; aspect-ratio:16/9; overflow:hidden;
+  border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.12);
 }
-/* stack on smaller screens */
-@media (max-width: 920px){
-  .video-row{ flex-direction:column; }
+.yt-embed iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+
+/* Narrow screens: stack vertically, each takes 80% width and tighter gap */
+@media (max-width: 860px){
+  .yt-gallery{ gap:clamp(8px,2.5vw,16px); }
+  .yt-card{ flex:0 1 80vw; max-width:80vw; margin:0 auto; }
 }
 </style>
+
+<div class="yt-gallery">
+
+  <figure class="yt-card">
+    <figcaption class="yt-title">
+      July 2022 — <strong>36.96</strong> ·
+      <a href="https://youtu.be/djeWwlQcAvM" target="_blank" rel="noopener">YouTube ↗</a>
+    </figcaption>
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/djeWwlQcAvM"
+        title="50m free — Jul 2022"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </figure>
+
+  <figure class="yt-card">
+    <figcaption class="yt-title">
+      Mar 2023 — <strong>28.91</strong> ·
+      <a href="https://youtu.be/q6Pg6k7ORuM" target="_blank" rel="noopener">YouTube ↗</a>
+    </figcaption>
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/q6Pg6k7ORuM"
+        title="50m free — Mar 2023"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </figure>
+
+</div>
+
 
 ---
 
