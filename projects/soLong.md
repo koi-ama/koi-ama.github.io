@@ -25,25 +25,21 @@ I built a tiny 2D maze game in C using MiniLibX. You “clear” every **C** (St
 
 ## What the game looks like
 
+![Game clear screen](../img/gameClear.png)  
+*Made it to R2-D2 after clearing the board.*
+
+![Game over screen](../img/gameOver.png)  
+*…and this is what happened the first few tries.*
+
+## Two short clips (why I tweaked the map)
+
 **First try (too difficult):**
 
-<video controls muted playsinline loop width="720" poster="{{ '../img/gameOver.png' | relative_url }}">
-  <source src="{{ '../img/tooDifficult.mov' | relative_url }}" type="video/quicktime">
-  <!-- Optional: provide MP4 too for wider browser support -->
-  <!-- <source src="{{ '/img/tooDifficult.mp4' | relative_url }}" type="video/mp4"> -->
-  Sorry—your browser can’t play the inline video. Download
-  <a href="{{ '../img/tooDifficult.mov' | relative_url }}">the clip</a>.
-</video>
+![Too difficult map demo](../img/tooDifficult.gif)
 
 **Second try (friendlier layout, finally clear):**
 
-<video controls muted playsinline loop width="720" poster="{{ '../img/gameClear.png' | relative_url }}">
-  <source src="{{ '/img/easy.mov' | relative_url }}" type="video/quicktime">
-  <!-- Optional MP4 fallback
-  <source src="{{ '/img/easy.mp4' | relative_url }}" type="video/mp4"> -->
-  Sorry—your browser can’t play the inline video. Download
-  <a href="{{ '../img/easy.mov' | relative_url }}">the clip</a>.
-</video>
+![Friendlier map demo](../img/easy.gif)
 
 
 I initially built a map that looked clever in my head and felt miserable under my fingers. After a few “boom” moments, I simplified the corridors and spacing. Practicing on a friendlier layout helped me learn the feel of movement and timing—then I could come back to harder maps with less panic.
