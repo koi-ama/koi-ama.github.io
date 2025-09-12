@@ -29,8 +29,6 @@ That was an **8.05 s** drop (about **21.8%** faster). Then I drifted away from s
 
 ### Clips (embedded)
 
-> If the players don’t show in a GitHub preview, open the deployed site—they render there.
-
 **July 2022 — 36.96**
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;max-width:min(900px,90vw);margin:12px auto;">
