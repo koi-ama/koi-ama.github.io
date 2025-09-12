@@ -58,7 +58,7 @@ I initially built a map that looked clever in my head and felt miserable under m
 
 Under the hood it’s standard *so_long*, just with my playful theme. (Icons are my custom XPMs for personal learning use.)
 
-## A tiny slice of code (plain English first)
+## A tiny slice of code
 
 The enemy is greedy: each step it picks the direction that **reduces the Manhattan distance** to the player. I also added a tiny throttle so it doesn’t move *every* time you do, which buys you a beat to route around it.
 
@@ -91,7 +91,7 @@ I drew six XPMs (player/enemy/wall/floor/item/exit). Each sprite sheet is 32×32
 
 Short version: tiny frames + consistent timing = surprisingly lively motion, even with four frames.
 
-## My build setup (kept it boring on purpose)
+## My build setup
 
 Inside a **Linux Dev Container** so compilers and X11 deps are consistent:
 
