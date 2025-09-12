@@ -4,7 +4,7 @@ type: essay
 title: "Learning to be Comfortable with Uncertainty"
 # All dates must be YYYY-MM-DD format!
 date: 2025-09-11
-published: true
+published: false
 labels:
   - Reflection
   - Student Life
