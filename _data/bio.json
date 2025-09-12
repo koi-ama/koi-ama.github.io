@@ -2,7 +2,7 @@
   "basics": {
     "name": "Molly Maluhia",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
+    "picture": "https://github.com/koi-ama.png",
     "email": "molly@hawaii.edu",
     "phone": "808-333-4444",
     "website": "https://mmaluhia.github.io",
@@ -16,11 +16,9 @@
     ]
   },
   "interests": [
+    { "name": "Creating EC websites" },
     { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Robotics" }
   ],
   "skills": [
     {
