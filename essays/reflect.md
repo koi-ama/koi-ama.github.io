@@ -12,7 +12,7 @@ I came to TypeScript from everyday JavaScript and some Java/Python. What surpris
 Two things felt like instant wins: (1) **type inference** is generous enough that I don’t have to decorate every variable; and (2) **union types + narrowing** let me model real-world “this or that” states without booleans everywhere. Compared to plain JS, the editor feedback loop is night-and-day; compared to Java, I get types **and** the expressiveness of modern ES.
 
 ## What I learned beyond syntax (ES6 + TS together)
-The module pushed me to treat ES6 features as the default: 『『『import/export』』』 for module boundaries, arrow functions for clarity, and 『『『const』』』 by default. Layering TS on top adds safer APIs. I also adopted a stricter mental model: functions are pure by default, data is immutable unless mutation buys me performance, and types describe *contracts* I can discuss with teammates.
+The module pushed me to treat ES6 features as the default: ```import/export``` for module boundaries, arrow functions for clarity, and ```const``` by default. Layering TS on top adds safer APIs. I also adopted a stricter mental model: functions are pure by default, data is immutable unless mutation buys me performance, and types describe *contracts* I can discuss with teammates.
 
 A small example from a WOD-style scoring task was to accept user input as either numbers or strings and still return a safe result:
 
@@ -36,10 +36,10 @@ export function overallScore(scores: JudgeScore[]): number | null {
 }
 ```
 
-What I like here is how **narrowing** (the 『『『v is number』』』 predicate) lets the compiler protect later steps. In earlier JS code I would sprinkle runtime checks everywhere; with TS, the type system documents and enforces the flow.
+What I like here is how **narrowing** (the ```v is number``` predicate) lets the compiler protect later steps. In earlier JS code I would sprinkle runtime checks everywhere; with TS, the type system documents and enforces the flow.
 
 ## A quick note on classes
-Re-implementing tiny OOP tasks (e.g., 『『『Score』』』, 『『『Ride』』』, simple 『『『Inventory』』』) reminded me that TS “classes” are syntax over JS prototypes, but with **real compile-time guarantees**. That means I get autocompletion, constructor contracts, and visibility modifiers without losing JavaScript’s runtime model. I still keep logic small and composable, but when a domain has identity and invariants, a class with typed fields feels appropriate.
+Re-implementing tiny OOP tasks (e.g., ```Score```, ```Ride```, simple ```Inventory```) reminded me that TS “classes” are syntax over JS prototypes, but with **real compile-time guarantees**. That means I get autocompletion, constructor contracts, and visibility modifiers without losing JavaScript’s runtime model. I still keep logic small and composable, but when a domain has identity and invariants, a class with typed fields feels appropriate.
 
 ## Athletic Software Engineering: how the WODs felt
 The practice WODs were honest: **slightly stressful, very useful**. The timer exposed two habits: (1) I hesitate on boilerplate, and (2) I underestimate input validation. My fix was to keep a tiny “WOD kit” in my notes—CLI scaffolds, test snippets, and a checklist (“parse → validate → transform → format”). After two or three runs, the anxiety dropped and muscle memory formed. I also liked the instant debrief: I wrote down where I fumbled (e.g., forgetting to sort before slicing) and re-ran with a stricter time cap.
@@ -48,7 +48,7 @@ Is it enjoyable? Weirdly, yes. The bounded time box turns learning into a sport:
 
 ## What I’ll do next
 To get the most out of TS for the rest of the course, I’m committing to:
-- **『『『strict』』』 everywhere** with explicit 『『『unknown』』』 at boundaries.
+- **```strict``` everywhere** with explicit ```unknown``` at boundaries.
 - **Tests first for edge cases** (e.g., invalid inputs) so types and tests reinforce each other.
 - Use **discriminated unions** for stateful code (loading/success/error) rather than boolean flags.
 - Keep a personal WOD log: problem → plan → pitfall → patch → proof (tests/bench).
