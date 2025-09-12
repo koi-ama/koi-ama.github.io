@@ -50,7 +50,7 @@ summary: "I built yamazemi.info because it was the website that nudged me into t
   .link-card-url   { margin-top:6px; color:#4f46e5; font-weight:600; font-size:.95rem; }
   /* 全面クリック用の覆いリンク */
   .link-card > .overlay {
-    position:absolute; inset:0; border-radius:12px; z-index:1;
+    position:absolute; inset:0; border-radius:12px; z-index:5;
   }
   /* テキスト選択やフォーカスのため本文は上に */
   .link-card-body, .link-card-thumb { position:relative; z-index:2; }
