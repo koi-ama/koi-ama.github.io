@@ -91,7 +91,10 @@ Short version: tiny frames + consistent timing = surprisingly lively motion, eve
 
 Inside a **Linux Dev Container** so compilers and X11 deps are consistent:
 
-![Linux Dev Container](../img/linuxContainer.png)
+<img src="{{ '/img/linuxContainer.png' | relative_url }}"
+     alt="Linux Dev Container"
+     style="display:block;margin:0 auto;width:min(60vw,100%);height:auto;" />
+
 
 - `Makefile` builds **libft**, **minilibx**, then the game.
 - Keybinds: `W/A/S/D` to move, `Esc` to quit.
