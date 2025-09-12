@@ -21,18 +21,26 @@ summary: "I built yamazemi.info because it was the website that nudged me into t
 - Today it’s a steady place for announcements, talk notes, and links.  
 - I’m rolling out a **mobile-first redesign** to make it easier to skim on phones.
 
-<!-- Page-scoped styles -->
+<!-- Page-scoped styles (you can move to site CSS later) -->
 <style>
   .link-card {
-    display:flex; gap:16px; align-items:center;
-    text-decoration:none; border:1px solid #e5e7eb;
-    border-radius:12px; padding:12px; background:#fff;
-    transition:transform .06s ease, box-shadow .2s ease;
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fff;
+    text-decoration: none;
+    transition: transform .06s ease, box-shadow .2s ease, border-color .2s ease;
+    max-width: 820px; /* お好みで */
+    margin: 12px 0;
   }
-  .link-card:hover { transform:translateY(-1px); box-shadow:0 6px 24px rgba(0,0,0,.08); }
+  .link-card:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(0,0,0,.08); border-color:#d1d5db; }
   .link-card-thumb {
-    flex:0 0 96px; width:96px; aspect-ratio:1/1;
-    border-radius:10px; overflow:hidden; background:#f3f4f6;
+    flex: 0 0 96px; width:96px; aspect-ratio:1 / 1;
+    border-radius: 10px; overflow: hidden; background:#f3f4f6;
     display:grid; place-items:center;
   }
   .link-card-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
@@ -40,6 +48,13 @@ summary: "I built yamazemi.info because it was the website that nudged me into t
   .link-card-title { font-weight:700; font-size:1.05rem; margin:0 0 4px; color:#111827; }
   .link-card-desc  { margin:0; color:#6b7280; font-size:.95rem; }
   .link-card-url   { margin-top:6px; color:#4f46e5; font-weight:600; font-size:.95rem; }
+  /* 全面クリック用の覆いリンク */
+  .link-card > .overlay {
+    position:absolute; inset:0; border-radius:12px; z-index:1;
+  }
+  /* テキスト選択やフォーカスのため本文は上に */
+  .link-card-body, .link-card-thumb { position:relative; z-index:2; }
+
   @media (max-width:640px){
     .link-card { flex-direction:column; align-items:stretch; }
     .link-card-thumb{ width:100%; aspect-ratio:16/9; }
@@ -52,19 +67,20 @@ summary: "I built yamazemi.info because it was the website that nudged me into t
 </style>
 
 <!-- Link Card (uses /img/yamazemi_logo_celeste_square.png) -->
-<a class="link-card" href="https://yamazemi.info" target="_blank" rel="noopener" aria-label="Open yamazemi.info">
+<div class="link-card" role="group" aria-label="yamazemi.info">
   <div class="link-card-thumb">
     <img
       src="{{ '/img/yamazemi_logo_celeste_square.png' | relative_url }}"
-      alt="yamazemi.info logo"
-      loading="lazy" decoding="async">
+      alt="yamazemi.info logo" loading="lazy" decoding="async">
   </div>
   <div class="link-card-body">
     <p class="link-card-title">yamazemi.info</p>
     <p class="link-card-desc">Seminar site — announcements, notes, and how to join.</p>
     <div class="link-card-url">yamazemi.info ↗</div>
   </div>
-</a>
+  <a class="overlay" href="https://yamazemi.info" target="_blank" rel="noopener" aria-label="Open yamazemi.info"></a>
+</div>
+
 
 
 ---
