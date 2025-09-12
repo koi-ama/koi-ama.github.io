@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/gameClear.png
+image: img/easyMap.png
 title: "so_long — building a tiny maze, getting stuck, and getting through"
 date: 2025
 published: true
