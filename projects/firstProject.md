@@ -29,29 +29,54 @@ That was an **8.05 s** drop (about **21.8%** faster). Then I drifted away from s
 
 ### Clips (embedded)
 
-**July 2022 — 36.96**
+<div class="video-row">
+  <figure class="video-card">
+    <figcaption class="video-title">
+      July 2022 — 36.96
+      <small> · <a href="https://youtu.be/djeWwlQcAvM" target="_blank" rel="noopener">YouTube ↗</a></small>
+    </figcaption>
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube.com/embed/djeWwlQcAvM?rel=0"
+        title="50 free 36.96 (2022-07-11)"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </figure>
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;max-width:min(900px,90vw);margin:12px auto;">
-  <iframe
-    src="https://www.youtube.com/embed/djeWwlQcAvM?rel=0"
-    title="50 free 36.96 (2022-07-11)"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
+  <figure class="video-card">
+    <figcaption class="video-title">
+      Mar 2023 — 28.91
+      <small> · <a href="https://youtu.be/q6Pg6k7ORuM" target="_blank" rel="noopener">YouTube ↗</a></small>
+    </figcaption>
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube.com/embed/q6Pg6k7ORuM?rel=0"
+        title="50 free 28.91 (2023-03-06)"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </figure>
 </div>
 
-**Mar 2023 — 28.91**
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;max-width:min(900px,90vw);margin:12px auto;">
-  <iframe
-    src="https://www.youtube.com/embed/q6Pg6k7ORuM?rel=0"
-    title="50 free 28.91 (2023-03-06)"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+<style>
+/* responsive two-up video layout */
+.video-row{
+  display:flex; gap:16px; justify-content:center; align-items:flex-start;
+  max-width:min(1100px,92vw); margin:12px auto;
+}
+.video-card{ flex:1 1 520px; margin:0; }
+.video-title{ font-weight:600; margin:0 0 8px; }
+.video-embed{ position:relative; width:100%; }
+.video-embed::before{ content:""; display:block; padding-top:56.25%; } /* 16:9 */
+.video-embed > iframe{
+  position:absolute; inset:0; width:100%; height:100%; border:0; border-radius:12px;
+}
+/* stack on smaller screens */
+@media (max-width: 920px){
+  .video-row{ flex-direction:column; }
+}
+</style>
 
 ---
 
