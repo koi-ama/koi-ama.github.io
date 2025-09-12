@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/easyMap.png
+image: ../img/easyMap.png
 title: "so_long — building a tiny maze, getting stuck, and getting through"
 date: 2025
 published: true
@@ -25,21 +25,21 @@ I built a tiny 2D maze game in C using MiniLibX. You “clear” every **C** (St
 
 ## What the game looks like
 
-![Game clear screen](img/gameClear.png)  
+![Game clear screen](../img/gameClear.png)  
 *Made it to R2-D2 after clearing the board.*
 
-![Game over screen](img/gameOver.png)  
+![Game over screen](../img/gameOver.png)  
 *…and this is what happened the first few tries.*
 
 ## Two short clips (why I tweaked the map)
 
 **First try (too difficult):**
 
-![Too difficult map demo](img/tooDifficult.mov)
+![Too difficult map demo](../img/tooDifficult.mov)
 
 **Second try (friendlier layout, finally clear):**
 
-![Friendlier map demo](img/easy.mov)
+![Friendlier map demo](../img/easy.mov)
 
 I initially built a map that looked clever in my head and felt miserable under my fingers. After a few “boom” moments, I simplified the corridors and spacing. Practicing on a friendlier layout helped me learn the feel of movement and timing—then I could come back to harder maps with less panic.
 
@@ -90,7 +90,7 @@ Short version: tiny frames + consistent timing = surprisingly lively motion, eve
 
 Inside a **Linux Dev Container** so compilers and X11 deps are consistent:
 
-![Linux Dev Container](img/linuxContainer.png)
+![Linux Dev Container](../img/linuxContainer.png)
 
 - `Makefile` builds **libft**, **minilibx**, then the game.
 - Keybinds: `W/A/S/D` to move, `Esc` to quit.
