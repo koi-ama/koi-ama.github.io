@@ -94,7 +94,6 @@ const island = c.island && c.island.trim() ? c.island : 'Unknown';
 
 I also added `console.assert` checks (sum should be **76682** for “kai”) to catch regressions fast. Little tests, big confidence.
 
-```html
 <p class="text-center">
   <img src="../img/hasKai_img4essay.png"
        class="img-fluid rounded shadow"
@@ -102,7 +101,6 @@ I also added `console.assert` checks (sum should be **76682** for “kai”) to 
        alt="Console showing: total Kai population => 76682"
        loading="lazy">
 </p>
-```
 
 ---
 
