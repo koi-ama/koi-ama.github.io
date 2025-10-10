@@ -117,7 +117,7 @@ This keeps the toggler **always** visible while duplicating **critical links** i
 - **API philosophy:** Bootstrap blends components and utilities; Semantic UI’s class names read closer to English (“ui card”), which is friendly but can balloon HTML.
 - **Learning curve:** Bootstrap wins on docs, examples, and ecosystem size (Stack Overflow answers abound).
 - **Themability:** Both can be themed, but Bootstrap’s CSS variables (v5) make token-level tweaks cleaner in 2025.
-- **Team velocity:** Bootstrap’s ubiquity means new teammates onboard fast—there’s a good chance they’ve used it.
+- **Team velocity:** Bootstrap’s ubiquity means new teammates onboard fast, there’s a good chance they’ve used it.
 
 ---
 
@@ -160,7 +160,7 @@ This keeps the toggler **always** visible while duplicating **critical links** i
 
 UI frameworks trade **raw control** for **sane defaults and speed**. If the task has moving parts (navigation, multiple sections, interactive bits) and a deadline, Bootstrap 5 is a pragmatic choice. As fidelity and brand demands rise, start reclaiming control: layer tokens, trim utilities, and keep only what pays rent.
 
-That’s how I now see frameworks—not as training wheels, but as **starter kits** you responsibly outgrow in spots, not wholesale.
+That’s how I now see frameworks, not as training wheels, but as **starter kits** you responsibly outgrow in spots, not wholesale.
 
 ---
 
