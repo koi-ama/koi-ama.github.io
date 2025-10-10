@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "UI Frameworks Are a Second Language — Why I Chose Bootstrap 5 (and When I Wouldn’t)"
 date: 2025-10-10
-published: false
+published: true
 tags: [ui, bootstrap, semantic-ui, css, webdev, reflections]
 thumbnail: /images/essays/ui-frameworks/cover.png
 ---
@@ -123,14 +123,22 @@ This keeps the toggler **always** visible while duplicating **critical links** i
 
 ## Screenshots (evidence beats opinions)
 
-<figure>
-  <img src="/images/essays/ui-frameworks/e36-bootstrap-rebuild.png"
-       alt="Bootstrap 5 recreation: hero + dual cards"
-       class="img-fluid rounded shadow" loading="lazy">
-  <figcaption>
-    E36 recreation: hero image, two callout cards, and an always-on hamburger on the right.
+<figure aria-describedby="cap-e36-compare">
+  <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-start">
+    <img src="/img/E36_starlink_real.png"
+         alt="Original Starlink homepage hero (real)"
+         loading="lazy"
+         style="flex:1 1 360px; width:100%; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.3)">
+    <img src="/img/E36_starlink_clone.png"
+         alt="My Bootstrap 5 recreation (clone)"
+         loading="lazy"
+         style="flex:1 1 360px; width:100%; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.3)">
+  </div>
+  <figcaption id="cap-e36-compare" style="margin-top:8px">
+    Left: <strong>real</strong> page · Right: <strong>Bootstrap 5 clone</strong> (same viewport & zoom).
   </figcaption>
 </figure>
+
 
 
 ---
