@@ -124,20 +124,25 @@ This keeps the toggler **always** visible while duplicating **critical links** i
 ## Screenshots (evidence beats opinions)
 
 <figure aria-describedby="cap-e36-compare">
-  <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-start">
+  <div style="
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap:12px;
+    align-items:start;">
     <img src="/img/E36_starlink_real.png"
          alt="Original Starlink homepage hero (real)"
          loading="lazy"
-         style="flex:1 1 360px; width:100%; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.3)">
+         style="width:100%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.3)">
     <img src="/img/E36_starlink_clone.png"
          alt="My Bootstrap 5 recreation (clone)"
          loading="lazy"
-         style="flex:1 1 360px; width:100%; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.3)">
+         style="width:100%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.3)">
   </div>
   <figcaption id="cap-e36-compare" style="margin-top:8px">
-    Left: <strong>real</strong> page · Right: <strong>Bootstrap 5 clone</strong> (same viewport & zoom).
+    Left: <strong>real</strong> · Right: <strong>Bootstrap 5 clone</strong> (same viewport & zoom).
   </figcaption>
 </figure>
+
 
 
 
