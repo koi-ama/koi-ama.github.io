@@ -9,7 +9,7 @@ labels:
   - Nextjs
 ---
 
-# MānoaLingo
+# MānoaLingo: Capture, Enrich, and Review the Words You Meet
 
 ## Authors
 - [Koichiro Amakasu](https://koi-ama.github.io/)
