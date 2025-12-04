@@ -131,13 +131,28 @@ Authorization shows a mini guard pattern. `adminProtectedPage` composes `loggedI
 
 Here’s an example of the UI this architecture supports:
 
-<figure aria-describedby="cap-browse-recipes">
+<figure
+  aria-describedby="cap-browse-recipes"
+  style="
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    text-align: center;
+  "
+>
   <img
     src="/img/browse-recipes.png"
     alt="Browse recipes page showing Club Oven Lovin’ recipe cards with images, tags, and dietary badges"
     loading="lazy"
-    style="width:75%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.25);">
-  <figcaption id="cap-browse-recipes" style="margin-top:8px">
+    style="
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+      display: block;
+    "
+  >
+  <figcaption id="cap-browse-recipes" style="margin-top: 8px;">
     Club Oven Lovin’ <strong>Browse Recipes</strong> page: container layout feeding data into reusable recipe cards with tags and dietary badges.
   </figcaption>
 </figure>
