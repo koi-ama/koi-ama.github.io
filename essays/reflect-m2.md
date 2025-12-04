@@ -131,7 +131,7 @@ Authorization shows a mini guard pattern. `adminProtectedPage` composes `loggedI
 
 Here’s an example of the UI this architecture supports:
 
-![Browse recipes page showing Club Oven Lovin’ recipe cards with images, tags, and dietary badges](/images/club-oven-lovin/browse-recipes.png)
+![Browse recipes page showing Club Oven Lovin’ recipe cards with images, tags, and dietary badges](/images/browse-recipes.png)
 
 Even this screenshot reflects patterns: container pages fetch data and pass it into smaller, reusable cards that know nothing about Prisma or routing.
 
