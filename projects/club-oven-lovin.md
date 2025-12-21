@@ -76,7 +76,7 @@ The value is in the safety and polish: uploads are resized, compressed, and conv
   "
 >
   <img
-    src="/img/club-recipes-details.png"
+    src="/img/club-recipe-details.png"
     alt="Browse recipes page "
     loading="lazy"
     style="
