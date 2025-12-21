@@ -39,11 +39,84 @@ The value is in the safety and polish: uploads are resized, compressed, and conv
 
 ## Screenshots
 
-![Club Oven Lovin home view placeholder](https://placehold.co/1200x720?text=Home+%2F+Browse+Recipes "Placeholder for the home page showing featured recipes")
+<figure
+  aria-describedby="club-home"
+  style="
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    text-align: center;
+  "
+>
+  <img
+    src="/img/club-home.png"
+    alt="home page of Club Oven Lovin’"
+    loading="lazy"
+    style="
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+      display: block;
+    "
+  >
+  <figcaption id="club-home" style="margin-top: 8px;">
+    Club Oven Lovin’ <strong>club home</strong> page: toppage.
+  </figcaption>
+</figure>
 
-![Recipe detail placeholder](https://placehold.co/1200x720?text=Recipe+Detail "Placeholder for a recipe detail page with ingredients and steps")
 
-![Create recipe flow placeholder](https://placehold.co/1200x720?text=Create+Recipe+Form "Placeholder for the create recipe form with image upload")
+<figure
+  aria-describedby="club-recipe-details"
+  style="
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    text-align: center;
+  "
+>
+  <img
+    src="/img/club-recipes-details.png"
+    alt="Browse recipes page "
+    loading="lazy"
+    style="
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+      display: block;
+    "
+  >
+  <figcaption id="club-recipe-details" style="margin-top: 8px;">
+    Club Oven Lovin’ <strong>Browse Recipes</strong> page: container layout feeding data into reusable recipe cards with tags and dietary badges.
+  </figcaption>
+</figure>
+
+<figure
+  aria-describedby="club-create-recipe"
+  style="
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    text-align: center;
+  "
+>
+  <img
+    src="/img/club-create-recipe.png"
+    alt="create recipes page"
+    loading="lazy"
+    style="
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+      display: block;
+    "
+  >
+  <figcaption id="club-create-recipe" style="margin-top: 8px;">
+    Club Oven Lovin’ <strong>Create Recipes</strong> page: create recipe form.
+  </figcaption>
+</figure>
 
 ## Links
 
